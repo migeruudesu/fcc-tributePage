@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;600&family=Poppins:wght@400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #fff066;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+p,a,ul,li,
+h1,h2,h3,h4,h5,h6
+div,section{
+     font-size:10px;
+     font-family: Inconsolata;
+     color: white;
+     text-decoration: none;
+     list-style: none;
+     color:black
+}
+.char--shadow{
+  -webkit-filter: drop-shadow(5px 5px 10px #222);
+  filter: drop-shadow(5px 5px 10px #222);
+}
+.basic--shadow{
+    box-shadow: 1px 2px 2px rgb(29, 32, 41);
+}
+header{
+    margin-top: 3vh;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+}
+.starter--banner{
+    width: 90%;
+}
+.logo--img{
+    width: 100%;
+    max-width: 500px;
+}
+.starter--img{
+    width: 100%;
+    max-width: 800px;
+}
+/* main start here */
+#main{
+    max-width: 1100px;
+    background: #9b987f;
+    padding: .5rem;
+    box-shadow:inset 0px 0px 25px #000000;
+}
+#title{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+.pokeball--img{
+    width: 25%;
+    transform: skewY(-10deg);
+}
+.main__title{
+    font-size: 1.2rem;
+    margin: .5rem 0;
+}
+.starter__card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:.5rem;
+    margin: .5rem .5rem;
+    border-radius: .5rem;
+}
+/* indi card */
+
+.tribute__info-container{
+    background: rgba(211, 211, 209, 0.6);
+}
+.starter__card--pikachu{
+    background: #fce945;
+}
+
+.starter__card--squirtle{
+    background: #067aff;
+}
+.starter__card--bulbasur{
+    background: #02AB32;
+}
+.starter__card--charmander{
+    background: #FF5353;
+}
+.starter__card--pidgeot{
+    background: #D8A86B;
+}
+.starter__card--butterfree{
+    background: #5F577B;
+}
+
+/* indi card */
+#img-div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: .5rem;
+}
+#image{
+    width: 50%;
+    margin: .5rem 0;
+}
+#img-caption{
+    height: auto;
+    margin: .2rem 0;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+#tribute-info{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tribute__info-container{
+    border-radius: .5rem;
+    margin: 1rem 0;
+    padding: .5rem;
+}
+#tribute-info p{
+    text-align: justify;
+    font-size: .7rem;
+}
+#tribute-info p::before {
+    content: "\00a0\00a0";
+    display: block;
+}
+#tribute-link{
+    border: 1.5px solid rgb(255, 102, 0);
+    border-radius: .3rem;
+    height: auto;
+    width: 50%;
+    margin: 1rem 0 0 0;
+    padding: .5rem;
+    font-size: 1rem;
+    text-align: center;
+}
+
+
+    @media screen and (min-width: 400px){
+        .main__title{
+            font-size: 1.5rem;
+        }
+    
+        #main{
+            padding: 1rem;
+        }
+    }
+
+    @media screen and (min-width: 600px){
+
+        .main__title{
+            font-size: 2rem;
+        }
+
+        #main{
+            padding: 1.5rem;
+        }
+        
+        .starter__card{
+            padding: 1.5rem 1.5rem;
+        }
+        #tribute-info p{
+            font-size: .8rem;
+        }
+        
+    }    
+
+    @media screen and (min-width: 800px){
+        
+        .starter__card{
+            flex-direction: row;
+        }
+        #image{
+            width: 70%;
+        }
+        .tribute__info-container{
+            margin: 0;
+        }
+        #tribute-info p{
+            font-size: .9rem;
+        }
+    }
